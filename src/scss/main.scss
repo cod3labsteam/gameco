@@ -35,6 +35,13 @@ body {
 
     &__item {
         flex: 1;
+
+        a {
+            font-size: 14px;
+            font-weight: 500;
+            color: $white;
+            text-decoration: none;
+        }
     }
 
     &__more {
@@ -52,7 +59,8 @@ body {
     }
 }
 
-.clients-section {
+.clients-section,
+.technical-partners {
     background: $darker;
 }
 
@@ -168,6 +176,7 @@ body {
 
             &__text {
                 flex: 1;
+                text-align: left;
 
                 span {
                     font-size: 28px;
@@ -190,4 +199,24 @@ body {
 
 @import "components/main-nav";
 @import "components/top-banner";
-@import "components/benefits-item";
+@import "components/icon-card";
+@import "components/footer";
+
+.btn {
+    text-transform: uppercase;
+
+    &.btn-light {
+        background: $white;
+        border-color: $white;
+    }
+
+    &.btn-outline-light {
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+            background: $white;
+            color: $black;
+        }
+    }
+}

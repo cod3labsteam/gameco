@@ -1,0 +1,118 @@
+//---------------------------------------------
+//
+//  Footer Component
+//
+//    1. Imports
+//    2. Component
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Imports
+//---------------------------------------------
+
+@import "../variables";
+
+//---------------------------------------------
+// 2. Component
+//---------------------------------------------
+
+.footer {
+    .footer-contact {
+        background: $dark-blue;
+        overflow: hidden;
+
+        &__brand {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background: $darker;
+            padding: 20px 0;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 50%;
+                left: -50%;
+                background: $darker;
+            }
+
+            a {
+                display: block;
+                min-width: 50%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                margin-right: 20px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .btn {
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .footer-content {
+        padding: 40px 0;
+
+        .footer-content-contact-info {
+            font-size: 14px;
+            font-weight: 700;
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            b {
+                color: $danger;
+            }
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li a {
+                text-decoration: none;
+                color: $white;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 10px;
+                display: block;
+
+                &:hover {
+                    color: $danger;
+                }
+            }
+        }
+    }
+}
