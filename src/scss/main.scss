@@ -76,7 +76,7 @@ body {
     &__text {
         text-align: center;
         padding: 0 20%;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
 
         p {
             font-size: 16px;
@@ -91,9 +91,10 @@ body {
         }
     }
 
-    &__benefits {
-        display: flex;
-    }
+    // &__benefits {
+    //     display: flex;
+    //     margin: 0 -15px;
+    // }
 }
 
 //---------------------------------------------
