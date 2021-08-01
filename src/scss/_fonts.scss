@@ -4,6 +4,7 @@
 //
 //    1. Loading Mixins
 //    2. Loading Fonts
+//    3. Icon Fonts
 //
 //---------------------------------------------
 
@@ -23,3 +24,59 @@
   "files": "Roboto",
   "weights": (300, 400, 700)
 ));
+
+//---------------------------------------------
+// 3. Icon Fonts
+//---------------------------------------------
+
+$icons-font-family: "icons" !default;
+$icons-font-path: "fonts" !default;
+
+$gc-icon3: "\e901";
+$gc-icon2: "\e902";
+$gc-icon1: "\e900";
+
+
+@font-face {
+  font-family: '#{$icons-font-family}';
+  src:  url('#{$icons-font-path}/#{$icons-font-family}.eot?jabuhs');
+  src:  url('#{$icons-font-path}/#{$icons-font-family}.eot?jabuhs#iefix') format('embedded-opentype'),
+    url('#{$icons-font-path}/#{$icons-font-family}.ttf?jabuhs') format('truetype'),
+    url('#{$icons-font-path}/#{$icons-font-family}.woff?jabuhs') format('woff'),
+    url('#{$icons-font-path}/#{$icons-font-family}.svg?jabuhs##{$icons-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="gc-"], [class*=" gc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icons-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gc-icon3 {
+  &:before {
+    content: $gc-icon3; 
+  }
+}
+.gc-icon2 {
+  &:before {
+    content: $gc-icon2; 
+  }
+}
+.gc-icon1 {
+  &:before {
+    content: $gc-icon1; 
+  }
+}
+
