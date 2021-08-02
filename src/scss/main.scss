@@ -24,6 +24,7 @@
 body {
     background: $body-color;
     color: $white;
+    font-family: 'Roboto_Slab', sans-serif;
 }
 
 .brands-listing {
@@ -31,6 +32,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 40px 0;
+    font-family: 'Rubik', sans-serif;
 
     &__item {
         flex: 1;
@@ -301,6 +303,7 @@ body {
 @import "components/footer";
 
 .btn {
+    font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
 
     &.btn-light {
