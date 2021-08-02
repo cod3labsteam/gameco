@@ -193,6 +193,32 @@ body {
     }
 }
 
+.team {
+    padding: 80px 0;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        h2, h3, h4, h5 {
+            margin-right: 20px;
+            font-size: 42px;
+            font-weight: 500;
+        }
+
+        button {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+}
+
+.image-card {
+    margin: 0 20px;
+    background: $darkest;
+}
+
 //---------------------------------------------
 // 3.Components
 //---------------------------------------------

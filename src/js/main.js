@@ -9,4 +9,8 @@ import '../scss/main.scss';
 // App code
 console.log(`Hello ${process.env.HELLO}`);
 
-$('.our-team__members').slick();
+$('.team__slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
