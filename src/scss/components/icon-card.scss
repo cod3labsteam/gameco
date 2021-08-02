@@ -21,6 +21,14 @@
     display: flex;
     padding: 0 15px;
 
+    @include media-breakpoint-only(md) {
+        flex-direction: column;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 40px;
+    }
+
     &__icon {
         width: 95px;
         height: 95px;
@@ -30,6 +38,10 @@
         align-items: center;
         justify-content: center;
         margin-right: 20px;
+
+        @include media-breakpoint-only(md) {
+            margin-bottom: 20px;
+        }
 
         i {
             font-size: 35px;

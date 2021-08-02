@@ -30,8 +30,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1a24', endColorstr='#007db9e8',GradientType=0 );
     padding: 20px 0;
 
+    @include media-breakpoint-down(lg) {
+        position: static;
+    }
+
     ul.navbar-nav {
         padding-left: 50px;
+
+        @include media-breakpoint-down(lg) {
+            padding-left: 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
         li {
             margin-right: 25px;
@@ -54,6 +64,10 @@
                     bottom: 0;
                     background: none;
                     margin: auto;
+
+                    @include media-breakpoint-down(lg) {
+                        display: none;
+                    }
                 }
 
                 &:hover {
@@ -66,6 +80,10 @@
     }
 
     .navbar-info {
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+        }
+
         &__number {
             text-align: right;
             padding-right: 20px;
@@ -103,4 +121,8 @@
             }
         }
     }
+}
+
+.navbar-toggler {
+    color: white;
 }

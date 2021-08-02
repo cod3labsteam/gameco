@@ -30,15 +30,24 @@
             padding: 20px 0;
             position: relative;
 
+            @include media-breakpoint-down(sm) {
+                background: none;
+                justify-content: center;
+            }
+
             &::before {
                 content: '';
                 position: absolute;
                 top: 0;
                 bottom: 0;
                 margin: auto;
-                width: 50%;
-                left: -50%;
+                width: 200%;
+                left: -200%;
                 background: $darker;
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
             }
 
             a {
@@ -55,6 +64,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include media-breakpoint-down(sm) {
+                padding: 15px;
+            }
 
             span {
                 margin-right: 20px;
@@ -101,6 +114,10 @@
             margin: 0;
             list-style: none;
 
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 50px;
+            }
+
             li a {
                 text-decoration: none;
                 color: $white;
@@ -113,6 +130,10 @@
                     color: $danger;
                 }
             }
+        }
+
+        button {
+            margin-bottom: 30px;
         }
     }
 }
