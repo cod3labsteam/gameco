@@ -413,6 +413,9 @@ body {
         left: 0;
         right: 0;
         margin: auto auto 30px;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
     }
 
     &__image {
@@ -425,6 +428,8 @@ body {
 
         img {
             width: 100%;
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
         }
     }
 
@@ -446,12 +451,14 @@ body {
     }
 
     &__description {
+        min-height: 105px;
+        margin-bottom: 20px;
+
         span {
             font-size: 14px;
             font-weight: 300;
             opacity: 0.5;
             color: $white;
-            margin-bottom: 20px;
             display: block;
         }
     }
