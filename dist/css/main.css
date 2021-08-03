@@ -7595,6 +7595,8 @@ body {
 .team {
   padding: 80px 0;
   overflow: hidden; }
+  .team__inlay {
+    overflow: hidden; }
   .team__title {
     display: -webkit-box;
     display: -ms-flexbox;
