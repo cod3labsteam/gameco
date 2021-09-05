@@ -1,18 +1,18 @@
 {
-  "name": "bootstrap5-webpack-boilerplate",
-  "version": "1.0.1",
-  "description": "A simple boilerplate using Bootstrap 5, Webpack and Babel.",
+  "name": "gameco",
+  "version": "1.0.0",
+  "description": "A gameco landing page",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production",
     "dev": "webpack --config webpack.config.js --mode development --watch",
     "images": "node ./bin/images.js"
   },
-  "author": "Dominik Hanke",
-  "license": "MIT",
+  "author": "Liviu Trandafir",
+  "license": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/noreading/bootstrap5-webpack-boilerplate.git"
+    "url": "https://cod3labs.com/en"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -37,5 +37,10 @@
     "trash": "^7.1.1",
     "webpack": "^5.44.0",
     "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }
